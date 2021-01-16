@@ -1,0 +1,5 @@
+[Unit] Description=Int-Run-Image After=network.target
+
+[Service] WorkingDirectory=/home/pi/Int-Run-Image/ ExecStart=/usr/bin/python /home/pi/Int-Run-Image/server.py Restart=always
+
+[Install] WantedBy=multi-user.target
